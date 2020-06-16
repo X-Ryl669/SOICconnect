@@ -57,3 +57,13 @@ You might need to resize them by +/- 2% or so depending on your printer resoluti
 The part is small enough to print in 10mn and it does not require any support so cleaning is very easy. 
 
 Compared to SOICbite, this solution takes a bit more space on the PCB but still much less than a TagConnect solution. I think that's a correct tradeoff for the safety it gives.
+
+## Compared to other (existing) solutions
+
+| Solution | Price | Usability | Requirement |
+|----------|-------|-----------|-------------|
+| **TagConnect** | ~$40 | Average. This requires manual work to lock and unlock legs, contacts are not that great and you need free space to operate the connection above your board | The footprint is simple but the cable is not. You must choose between 6 or 10 pins connector |
+| **Pogo pins** | High | Probably the best solution if you can afford making a jig to hold the pins for each model of the PCB | You need a jig that will be costly to build and test |
+| **SOICbite** | Low $10 | Correct for experienced worker | You must cut the power on the clip before connecting it else any misalignement error might burn your PCB (and they are possible since there is no tactile feedback on the correct alignement) and re-enable it afterward. It's too error prone to be done in a production line, since an error cost you a complete board |
+| **SOICConnect** | Low $10 | Good for any worker | Can be used while keeping the clip powered since the fang prevent connecting the wrong pins, and there is a tactile feedback when touching the board edge and when the fang enters the PCB hole, so it's possible to chain board programming faster |
+| **JST connector** | Highest | Low | Each board will need a female connector that'll probably used only once. Not convenient for chain programming since unplugging the connector is a bit dangerous if done badly. Also, it takes a lot of space on PCB. |
