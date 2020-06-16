@@ -6,6 +6,9 @@ His solution is very nice, compact and simple for development work.
 In this repository, you'll find a different solution trying to solve a different goal: producing a PCB board in large quantity.
 
 The main idea here is to buy the low cost SOIC clip as shown above, 3D print some model you'll find here, glue it on the clip and start programming your boards (either yourself or by any worker).
+The part will look like this:
+![Part on clip](pic/SOICFang.jpg?raw=true "SOICConnect")
+
 In order to acheive this, the solution must provide the following features:
 
 1. Prevent pluging the clip badly (either in wrong direction or with pins shifted)
@@ -15,7 +18,7 @@ In order to acheive this, the solution must provide the following features:
 
 ## Connection safety
 The connection safety is provided by these shapes:
-
+![Fang and border](pic/FangAndBorders.jpg?raw=true "Fang and borders")
 **In green**: The sides to push the PCB board onto (so the distance from the PCB edge and the connection is fixed)
 
 **In red**: The assymetric fang to fit into the PCB's footprint hole. This ensures the lateral fitting so the clip does not connect to an unexpected pin
@@ -24,10 +27,22 @@ The connection safety is provided by these shapes:
 
 The clip mates with this footprint:
 
+![Footprint](pic/SOICClipFootprint.jpg?raw=true "Footprint")
+
+The dimensions here are simple: 
+The pad must be 3mm from PCB edge and the hole in the PCB is a round hole of 0.8mm x 2mm located 5.3mm from the edge and centered between the first 1.27mm picthed 2 pads.
+
+In 3D:
+
 **Bottom**:
+
+![Bottom](pic/SOICClipExample.jpg?raw=true "Bottom")
+
+You'll align the groove with the white line.
 
 **Top**:
 
+![Top](pic/SOICClipExample2.jpg?raw=true "Top")
 
 ## Some notes
 The element that's glued on the clip should be on a single side (typically the bottom side). 
